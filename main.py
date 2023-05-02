@@ -1,0 +1,1 @@
+while 1:import openai;openai.api_key=open('token.txt',"r").read().replace("\n","");inp=input("INPUT: ");print("\n");print("GPT: ",openai.Completion.create(model="text-davinci-003",prompt=inp,max_tokens=2048,temperature=0)['choices'][0]['text']);print("\n")
